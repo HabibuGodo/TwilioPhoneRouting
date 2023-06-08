@@ -737,7 +737,7 @@
                 style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/378978/profile/profile-80_1.jpg);">
             </div>
             <div class="ca-name">Outgoing</div>
-            <div class="ca-number">123 456 7890</div>
+            <div class="ca-number">+255673135158</div>
             <div class="ca-status" data-dots="...">Calling</div>
             <div class="ca-buttons">
                 <div class="ca-b-single" data-label="Add Contact"
@@ -984,7 +984,7 @@
                 var params = {
                     To: phoneNumberToCall,
                     agent: identity,
-                    callerId: '+441156477288',
+                    callerId: '+15153052213',
                     Location: 'US1'
                 }
 

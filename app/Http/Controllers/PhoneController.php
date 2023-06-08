@@ -20,7 +20,7 @@ class PhoneController extends Controller
             env('TWILIO_API_KEY'),
             env('TWILIO_API_SECRET'),
             3600,
-            'Mathew_James',
+            'Habibu_Godo',
             'us1'
         );
 
@@ -53,6 +53,8 @@ class PhoneController extends Controller
 
         // Set up instance of voice response.
         $voiceResponse = new VoiceResponse();
+
+        dd($dialledNumber);
 
         if ($dialledNumber != env('TWILIO_CALLER_ID')) {
             # Outbound phone call.
