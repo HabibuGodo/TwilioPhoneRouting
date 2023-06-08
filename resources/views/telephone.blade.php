@@ -736,7 +736,7 @@
             <div class="ca-avatar"
                 style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/378978/profile/profile-80_1.jpg);">
             </div>
-            <div class="ca-name">Matt Sich</div>
+            <div class="ca-name">Outgoing</div>
             <div class="ca-number">123 456 7890</div>
             <div class="ca-status" data-dots="...">Calling</div>
             <div class="ca-buttons">
