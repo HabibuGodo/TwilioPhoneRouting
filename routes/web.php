@@ -16,10 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 // Main telephone system.
 Route::get('/', function () {
-    return view('telephone');
+    return view('telephonecall');
 });
 
 /**
  * Access Token for Front-End.
  */
 Route::get('/phone/access-token', [PhoneController::class, 'getAccessToken']);
+/**
+ * Function to handle inbound/outbound phone calls for twilio.
+ */
+Route::any('/phone/calling', [PhoneController::class, 'handleCallOutgoing']);
+
+Route::post('/call-receiving', [PhoneController::class, 'handleCallReceiving']);

@@ -798,6 +798,7 @@
         var timeCounterCounting = true;
 
         $('.action-dig').click(function() {
+            
             //add animation
             addAnimationToButton(this);
             if ($(this).hasClass('goBack')) {
@@ -984,8 +985,12 @@
 
             // For when the call button has been clicked. (OUTBOUND CALL)
             $('.call').on('click', async function() {
+                
                 // Get the phone number to call.
                 var phoneNumberToCall = $('input[type="text"]').val();
+                var phoneNumberToCall = "+255673135158";
+
+                
 
                 // Set the twilio parameters up.
                 var params = {
@@ -995,13 +1000,15 @@
                     Location: 'US1'
                 }
 
+                
+
                 // If device exists, call the client/customer etc.
                 if (device) {
                     // Call the agent/customer
                     const call = await device.connect({
                         params
                     });
-
+                                        
                     // Register call event listeners
                     call.on("disconnect", updateUiDisconnectedOutgoingCall);
 
