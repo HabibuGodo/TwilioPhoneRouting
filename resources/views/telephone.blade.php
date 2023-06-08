@@ -776,7 +776,10 @@
 
 @section('scripts')
     <script>
+        //add 
+
         $('.number-dig').click(function() {
+            alert('test')
             //add animation
             addAnimationToButton(this);
             //add number
@@ -784,6 +787,10 @@
             var valueToAppend = $(this).attr('name');
             $('.phoneString input').val(currentValue + valueToAppend);
         });
+
+
+
+
 
 
         var timeoutTimer = true;
